@@ -14,6 +14,13 @@ const SearchContainer = styled(Box)`
 const InputSearchBase = styled(InputBase)`
   padding-left:20px;
   width: 100%;
+  font-size: unset;
+`
+
+const SearchIconWrapper = styled(Box)`
+ color: blue;
+ padding: 5px;
+ display: flex;
 `
 
 const Search = () => {
@@ -22,9 +29,9 @@ const Search = () => {
         <InputSearchBase
         placeholder='Search for products, brands and more'
          />
-         <Box>
+         <SearchIconWrapper>
             <SearchIcon />
-         </Box>
+         </SearchIconWrapper>
     </SearchContainer>
   )
 }
