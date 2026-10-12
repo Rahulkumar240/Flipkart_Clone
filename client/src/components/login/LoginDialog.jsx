@@ -199,7 +199,7 @@ const LoginDialog = ({ open, setOpen }) => {
                             Login
                         </LoginButton>
 
-                        <Typography style={{ textAlign: 'center' }}>
+                        <Typography sx={{ textAlign: 'center' }}>
                             OR
                         </Typography>
 
