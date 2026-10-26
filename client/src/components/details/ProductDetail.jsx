@@ -1,4 +1,4 @@
-import { Box, Tab, TableBody,TableRow, TableCell, Typography, styled } from "@mui/material";
+import { Box, Tab, Table, TableBody, TableRow, TableCell, Typography, styled } from "@mui/material";
 import { LocalOffer as Badge } from "@mui/icons-material";
 
 
@@ -54,6 +54,7 @@ const ProductDetail = ({ product }) => {
                 <Typography><StyledBadge /> Partner OfferExtra 10% off upto ₹500 on Paytm Wallet. Min order value ₹1000. Valid once per Paytm account T&C</Typography>
                 <Typography><StyledBadge /> No Cost EMI on Bajaj Finserv EMI Card on cart value about ₹1000 T&C</Typography>
             </SmallText>
+            <Table>
             <TableBody>
                 <ColumnText>
                     <TableCell style={{ color: '#878787'}}>Delivery</TableCell>
@@ -82,6 +83,7 @@ const ProductDetail = ({ product }) => {
                     <TableCell>{product.description}</TableCell>
                 </ColumnText>
             </TableBody>
+            </Table>
         </>
     );
 }
