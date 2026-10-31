@@ -7,7 +7,7 @@ import Connection from './database/db.js';
 import DefaultData from './default.js';
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(bodyParser.json({ extended: true }));
